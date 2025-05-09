@@ -19,7 +19,10 @@ export default function ProductPage() {
     slides: {
       perView: 1,
     },
-    duration: 1000,
+    defaultAnimation:{
+      duration: 500,
+      easing: (t: number) => t * t
+    }, 
   })
 
   useEffect(() => {
