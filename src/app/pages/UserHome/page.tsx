@@ -19,10 +19,6 @@ export default function ProductPage() {
     slides: {
       perView: 1,
     },
-    defaultAnimation:{
-      duration: 500,
-      easing: (t: number) => t * t
-    }, 
   })
 
   useEffect(() => {
@@ -41,7 +37,7 @@ export default function ProductPage() {
       }
     }
 
-    intervalId = setInterval(advanceSlide, 3000)
+    intervalId = setInterval(advanceSlide, 5000) // Updated to 5 seconds
 
     return () => {
       if (intervalId) {
